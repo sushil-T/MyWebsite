@@ -1,0 +1,105 @@
+body {
+            font-family: 'Poppins', sans-serif;
+            padding-top: 70px;
+            background: linear-gradient(135deg, #e0eafc, #cfdef3);
+            min-height: 100vh;
+        }
+        .navbar {
+            background: linear-gradient(to right, #2c3e50, #3498db);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .navbar-brand, .nav-link {
+            color: #fff !important;
+            font-weight: 500;
+        }
+        
+        .container {
+            max-width: 1200px;
+        }
+        .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: var(--bs-navbar-active-color);
+    color: rgb(14, 14, 14) !important;
+}
+        h1 {
+            font-weight: 700;
+            color: #2c3e50;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+        .lead {
+            color: #34495e;
+        }
+        .card {
+            height: 100%;
+            border: none;
+            border-radius: 15px;
+            background: #fff;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+        }
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .card-title {
+            color: #2c3e50;
+            font-weight: 600;
+            font-size: 1.25rem;
+        }
+        .card-text {
+            color: #7f8c8d;
+            font-size: 0.95rem;
+        }
+        .card-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        .fullstack-icon { color: #2c3e50; } /* Neutral color for full stack */
+        .html-icon { color: #e34f26; } /* Official HTML5 orange */
+        .css-icon { color: #264de4; } /* Official CSS3 blue */
+        .bootstrap-icon { color: #7952b3; } /* Official Bootstrap purple */
+        .js-icon { color: #f7df1e; } /* Official JavaScript yellow */
+        .btn-primary {
+            background: linear-gradient(to right, #3498db, #2980b9);
+            border: none;
+            border-radius: 25px;
+            padding: 10px 20px;
+            font-weight: 500;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+        .btn-primary:hover {
+            background: linear-gradient(to right, #2980b9, #1c6ea4);
+            transform: scale(1.05);
+        }
+        .row {
+            margin-bottom: 30px;
+        }
+        .col-md-4 {
+            margin-bottom: 30px;
+        }
+        .interactive-section {
+            background: #fff;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        .btn-secondary {
+            background: linear-gradient(to right, #7f8c8d, #95a5a6);
+            border: none;
+            border-radius: 25px;
+            padding: 10px 20px;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+        .btn-secondary:hover {
+            background: linear-gradient(to right, #95a5a6, #7f8c8d);
+            transform: scale(1.05);
+        }
+        #welcomeMsg {
+            color: #2c3e50;
+            font-weight: 500;
+        }

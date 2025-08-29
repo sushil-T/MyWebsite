@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ePortfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">ePortfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="fullstackDevelopment.html">Full Stack Development</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="html.html">HTML</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="css.html">CSS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bootstrap.html">Bootstrap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="js.html">JavaScript</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h1>CSS (Cascading Style Sheets)</h1>
+        <p class="lead">CSS is a stylesheet language used to describe the presentation of HTML documents, separating content from design for better maintainability.</p>
+
+        <section class="card mb-4">
+            <div class="card-body">
+                <h2 class="card-title">Syntax and Selectors</h2>
+                <p>Basic syntax: <code>selector { property: value; }</code></p>
+                <p>Selectors: Element (e.g., <code>p</code>), Class (<code>.class</code>), ID (<code>#id</code>), Attribute (<code>[type="text"]</code>).</p>
+            </div>
+        </section>
+
+        <section class="card mb-4">
+            <div class="card-body">
+                <h2 class="card-title">Box Model</h2>
+                <p>Every element is a box with content, padding, border, and margin. This controls spacing and layout.</p>
+            </div>
+        </section>
+
+        <section class="card mb-4">
+            <div class="card-body">
+                <h2 class="card-title">Advanced Features</h2>
+                <ul>
+                    <li>Flexbox: For one-dimensional layouts (e.g., <code>display: flex;</code>).</li>
+                    <li>Grid: For two-dimensional layouts (e.g., <code>display: grid;</code>).</li>
+                    <li>Responsive Design: Media queries like <code>@media (max-width: 600px) { ... }</code>.</li>
+                    <li>Animations: Using <code>@keyframes</code> and <code>transition</code> properties.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="interactive-section mb-4">
+            <h2>Demonstrations</h2>
+            <h3>Styled Box</h3>
+            <div class="demo-box">Demo Box</div>
+            <h4>Code for the above:</h4>
+            <pre><code>.demo-box {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    border: 2px solid black;
+    margin: 10px;
+    padding: 10px;
+}</code></pre>
+            <p>Explanation: This applies background, border, margin, and padding, demonstrating CSS's control over layout.</p>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
