@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">ePortfolio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -19,8 +22,11 @@
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="fullstackDevelopment.html">Full Stack Development</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="fullstackdevelopment.html">Full Stack Development</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="html.html">HTML</a>
@@ -41,7 +47,8 @@
 
     <div class="container mt-5">
         <h1>JavaScript</h1>
-        <p class="lead">JavaScript is a high-level, interpreted programming language that enables interactive web pages. It's essential for client-side scripting.</p>
+        <p class="lead">JavaScript is a high-level, interpreted programming language that enables interactive web pages.
+            It's essential for client-side scripting.</p>
 
         <section class="card mb-4">
             <div class="card-body">
@@ -49,7 +56,8 @@
                 <ul>
                     <li>Variables: <code>let</code>, <code>const</code>, <code>var</code>.</li>
                     <li>Data Types: Number, String, Boolean, Array, Object.</li>
-                    <li>Operators: Arithmetic (<code>+</code>, <code>-</code>), Comparison (<code>==</code>, <code>===</code>), Logical (<code>&&</code>, <code>||</code>).</li>
+                    <li>Operators: Arithmetic (<code>+</code>, <code>-</code>), Comparison (<code>==</code>,
+                        <code>===</code>), Logical (<code>&&</code>, <code>||</code>).</li>
                 </ul>
             </div>
         </section>
@@ -74,7 +82,8 @@
         <section class="card mb-4">
             <div class="card-body">
                 <h2 class="card-title">DOM Manipulation and Events</h2>
-                <p>Access elements with <code>document.getElementById()</code>, add events like <code>click</code> with <code>addEventListener()</code>.</p>
+                <p>Access elements with <code>document.getElementById()</code>, add events like <code>click</code> with
+                    <code>addEventListener()</code>.</p>
             </div>
         </section>
 
@@ -96,7 +105,9 @@ document.getElementById('decrementBtn').addEventListener('click', function() {
     count--;
     document.getElementById('counterResult').textContent = count;
 });</code></pre>
-            <p>Explanation: This script initializes a counter variable and updates it when the user clicks the "Increment" or "Decrement" buttons. The <code>addEventListener()</code> method captures click events, and the DOM is updated by changing the text content of a span element.</p>
+            <p>Explanation: This script initializes a counter variable and updates it when the user clicks the
+                "Increment" or "Decrement" buttons. The <code>addEventListener()</code> method captures click events,
+                and the DOM is updated by changing the text content of a span element.</p>
 
             <h3>Email Validation</h3>
             <form class="mb-3">
@@ -117,22 +128,24 @@ document.getElementById('decrementBtn').addEventListener('click', function() {
         result.style.color = 'red';
     }
 });</code></pre>
-            <p>Explanation: This script validates an email input when the "Submit" button is clicked. It checks if the input contains an "@" symbol and updates a paragraph with a success or error message, also changing its color.</p>
+            <p>Explanation: This script validates an email input when the "Submit" button is clicked. It checks if the
+                input contains an "@" symbol and updates a paragraph with a success or error message, also changing its
+                color.</p>
         </section>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         let count = 0;
-        document.getElementById('incrementBtn').addEventListener('click', function() {
+        document.getElementById('incrementBtn').addEventListener('click', function () {
             count++;
             document.getElementById('counterResult').textContent = count;
         });
-        document.getElementById('decrementBtn').addEventListener('click', function() {
+        document.getElementById('decrementBtn').addEventListener('click', function () {
             count--;
             document.getElementById('counterResult').textContent = count;
         });
-        document.getElementById('emailBtn').addEventListener('click', function() {
+        document.getElementById('emailBtn').addEventListener('click', function () {
             let email = document.getElementById('emailInput').value;
             let result = document.getElementById('emailResult');
             if (email.includes('@')) {
@@ -145,4 +158,5 @@ document.getElementById('decrementBtn').addEventListener('click', function() {
         });
     </script>
 </body>
+
 </html>
